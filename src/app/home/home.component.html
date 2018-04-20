@@ -1,1 +1,46 @@
-Home
+
+<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+  <mat-sidenav #sidenav [mode]="mode" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')">
+    <mat-card class="sidenav-header">
+      <div class="user-view">
+        <img class="image-user" src="/assets/images/perfil/user.jpg" style="margin-left:180px;">
+        <div class="name">Franz Ronald Aruni M.</div>
+        <div class="email">DESARROLLO DE SOFTWARE</div>
+      </div>
+    </mat-card>
+
+    <mat-list role="list">
+      
+      <mat-list-item role="listitem">
+          <i class="mdi-action-home"></i>Inicio
+      </mat-list-item>
+      <mat-list-item role="listitem">
+          <i class="mdi-editor-attach-money"></i>Ventas
+      </mat-list-item>
+      <mat-list-item role="listitem">
+          <i class="mdi-maps-local-parking"></i>Productos
+      </mat-list-item>
+      <mat-list-item role="listitem">
+          <i class="mdi-communication-business"></i>Almacen
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem">
+          <i class="mdi-communication-import-export"></i>Traspasos
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item role="listitem">
+          <i class="mdi-content-remove-circle"></i>Salir
+      </mat-list-item>
+    </mat-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header></app-header>
+    <div class="button-row">
+      <button id="btn-sidenav" class="sidenav-button" mat-mini-fab (click)="sidenav.toggle()" color="primary">
+          <i class="mdi-navigation-menu"></i>
+      </button>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span></span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <i class="mdi-navigation-more-vert"></i>
+    </button>
+    <button mat-icon-button>
+        <i class="mdi-navigation-apps"></i>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <i class="mdi-action-lock"></i>
+        <span>Cambiar Contraseña</span>
+      </button>
+      <button mat-menu-item>
+        <i class="mdi-action-exit-to-app"></i>
+        <span>Cerrar Sesión</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
