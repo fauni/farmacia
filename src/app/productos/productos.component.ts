@@ -3,11 +3,11 @@ import { Platform } from '@angular/cdk/platform';
 import { platformBrowser } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-productos',
+  templateUrl: './productos.component.html',
+  styleUrls: ['./productos.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ProductosComponent implements OnInit {
   opened: Boolean = false;
   mode: string;
   shouldRun: any;

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
+import { ProductosRoutingModule } from './productos-routing.module';
+import { ProductosComponent } from './productos.component';
 import { ComponentsModule } from '../components/components.module';
 import {
+
   MatSidenavModule,
   MatCardModule,
   MatIconModule,
@@ -22,11 +23,11 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   imports: [
     CommonModule,
-    HomeRoutingModule,
+    ProductosRoutingModule,
     ComponentsModule,
     MatSidenavModule,
     MatButtonModule
   ],
-  declarations: [HomeComponent]
+  declarations: [ProductosComponent]
 })
-export class HomeModule { }
+export class ProductosModule { }

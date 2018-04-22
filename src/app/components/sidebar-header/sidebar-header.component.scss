@@ -1,0 +1,26 @@
+mat-card{
+    //background: red;
+    color: white;
+    background: url('../../../assets/images/apps/fondoSidenav.jpg');
+}
+
+.user-view {
+    text-align: right;
+    //background: url('../../assets/images/apps/FondoIntranet.jpg');
+
+    img {
+        border-radius: 50%;
+        width: auto;
+        height: 50px;
+    }
+    .name {
+        font-size: 1.25em;
+    }
+
+    .name,
+    .email {
+        height: auto;
+        line-height: 24px;
+        padding: 0;
+    }
+}
