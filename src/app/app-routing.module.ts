@@ -7,6 +7,7 @@ const routes: Routes = [
     { path: '', loadChildren: './home/home.module#HomeModule'},
     { path: 'home', loadChildren: './home/home.module#HomeModule'},
     { path: 'productos', loadChildren: './productos/productos.module#ProductosModule'},
+    { path: 'ventas', loadChildren: './ventas/ventas.module#VentasModule'},
     { path: 'login', loadChildren: './login/login.module#LoginModule'},
     { path: 'error', loadChildren: 'app/server-error/server-error.module#ServerErrorModule' },
     { path: 'access-denied', loadChildren: 'app/access-denied/access-denied.module#AccessDeniedModule' },

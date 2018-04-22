@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild, Input } from '@angular/core';
+import { ActivatedRoute, Routes, Router } from '@angular/router';
 
 @Component({
     selector: 'app-sidebar-items',
@@ -7,7 +8,7 @@ import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild, Input } from '@
 })
 export class SidebarItemsComponent implements OnInit {
 
-    constructor(
+    constructor(private routes: Router
     ) { }
 
     ngOnInit() {
@@ -18,4 +19,7 @@ export class SidebarItemsComponent implements OnInit {
       localStorage.removeAll();
     }
 
+    openApp(nameurl: string) {
+        this.routes.navigate(['/' + nameurl]);
+    }
 }
